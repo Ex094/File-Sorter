@@ -14,3 +14,7 @@ Extensions and Folder names are hardcoded, more extensions can be added accordin
 <h2>After:</h2>
 ![alt text](http://i.imgur.com/hBD6amU.png)
 
+
+Coded By Ex094
+http://www.procurity.wordpress.com
+
