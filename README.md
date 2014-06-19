@@ -7,6 +7,12 @@ Extensions and Folder names are hardcoded, more extensions can be added accordin
 
 <b>Python Version Used:</b> 2.7.5
 
+<h2>Usage:</h2>
+The filename is followed by the directory where you want to sort the files like
+
+</br>
+
+<b>filesort.py D:/Softwares/</b>
 
 <h2>Before:</h2>
 ![alt text](http://i.imgur.com/ifydjB6.png)
