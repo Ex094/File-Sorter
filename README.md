@@ -5,7 +5,8 @@ A Simple Python script that sorts files according to their extensions like .exe 
 
 Extensions and Folder names are hardcoded, more extensions can be added according to the user needs.
 
-<b>Python Version Used:</b> 2.7.5
+<b>Tested on</b> 2.7 & 3.5
+Added Compatibility for Python 3 
 
 <h2>Usage:</h2>
 The filename is followed by the directory where you want to sort the files like
