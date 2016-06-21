@@ -1,7 +1,8 @@
 import os, shutil, sys
 
 ###Extensions and their respective folder names
-extension = {'Text': '.txt', 'Executables': '.exe', 'Python Executable': '.py'}
+extension = {'Text': '.txt', 'Executables': '.exe', 'Python Executable': '.py',
+             'Media':'.mp3'}
 
 
 def file_sort(path):
@@ -10,7 +11,7 @@ def file_sort(path):
 
     ###Check if folder is not empty
     if (files == 0):
-        print "No files found in this directory"
+        print ('No files found in this directory')
 
     else:
         for ex in extension:
@@ -29,18 +30,22 @@ def file_sort(path):
 
                     ###Error handler in case if files already exist
                     except:
-                        print "Files And Folders have been sorted already!"
+                        print ('Files And Folders have been sorted already!')
                         break
 
 
 try:
     if(sys.argv[1]):
+        direc = sys.argv[1]
         if(os.path.isdir(sys.argv[1])):
-           print "Sorting files in defined path: " + sys.argv[1]
-           file_sort(sys.argv[1])
-           
+            #Check if there is a / at the end of the given path
+            if(direc[len(direc) - 1] != '/'):
+                print('Dir path must end with a /')
+            else:
+                print ('Sorting files in defined path: ' + sys.argv[1])
+                file_sort(sys.argv[1])
         else:
-           print "Directory does not exist"
+            print ('Directory does not exist')
 except:
-    print "No Directory or Path Defined!"
-    print "Command: filesort.py C:/folder/folder"
+    print ('No Directory or Path Defined!')
+    print ('Command: filesort.py C:/folder/')
